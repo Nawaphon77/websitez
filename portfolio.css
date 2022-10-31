@@ -1,0 +1,192 @@
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top{
+    width:  33.76cm;
+    margin: 0 auto;
+}
+
+.menubar{
+height: 1.38cm;
+background: white;
+width: 100%;
+box-shadow: 0 0 10px  whitesmoke;
+}
+
+.menubar .logo{ 
+    float: left;
+}
+
+
+.menubar h1{
+margin: 0;
+font-size: 43.19 ;
+font-weight: normal;
+padding-top: 5px;
+}
+
+.menubar ul.menu{
+    float: right;
+    list-style: none;
+}
+
+.menubar ul.menu li{
+    float: left;
+    margin-right: 2.19cm;
+}
+
+.menubar ul.menu a{
+    text-decoration: none;
+    color: black;
+    border-bottom:  2px solid transparent;
+    padding-bottom: 20px ;
+    transition: all 0.3s ease ;
+}
+
+.menubar ul.menu a:hover{
+    border-bottom:  2px solid black;
+    padding-bottom: 20px ;
+}
+
+.menubar ul.menu a{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.header{
+    width: 100%;
+    background-image:url(test01.jpg);
+    height: 880px;
+    background-size: cover;
+    background-position: center;
+}
+
+.Text{
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+*::before,::after {
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+button{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 20px 15px;
+    color: black;
+    font-size: 2rem;
+}
+
+
+button span{
+    position: relative;
+    display: inline-block;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition:-web-transfrom 0.3s ease;
+    transition: -web-transfrom 0.3 ease;
+    transition: transfrom 0.3s ease;
+    transition: transfrom 0.3s ease, -webkit-transfrom 0.3s ease;
+}
+
+
+.previons:hover span{
+  -webkit-transform: translateX(-10px)scale(1.2);
+   transform: translateX(-10px)scale(1.2);
+}
+
+.Arrow:hover span{
+    -webkit-transform: translateX(10px)scale(1.2);
+     transform: translateX(10px)scale(1.2);
+}
+
+.Slider-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    justify-content:center ;
+}
+
+.Slider-nav li{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 2;
+    flex: 2;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    display: none;
+    box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+}
+
+img.active{
+    display: block;
+    -webkit-animation : fadeimg 0.8s;
+     animation: fadeimg 0.8s;
+    }
+
+.Slider-nav .Arrow {
+   -webkit-box-flex: 0;
+   flex: 0 0 10%;
+   padding-top: 20px;
+   padding-left: 1rem;
+}
+
+.Slider-nav span{
+display: block;
+width: 100%;
+}
+
+@-webkit-keyframes fadeimg{
+ from {
+     opacity: 0;
+ }
+ to {
+     opacity: 1;
+ }
+}
+
+@keyframes fadeimg{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+   }
